@@ -43,3 +43,4 @@ helm repo update
 # k8s configmap vs secret
 - https://medium.com/google-cloud/kubernetes-configmaps-and-secrets-68d061f7ab5b
 - https://medium.com/google-cloud/kubernetes-configmaps-and-secrets-part-2-3dc37111f0dc
+- https://blog.bigbinary.com/2017/05/25/using-kubernetes-configmap-with-configuration-files-for-deploying-rails-app.html
