@@ -6,7 +6,7 @@ helm init learn-helm
 ```
 
 # helm structure
-```
+```console
 |____templates
 | |____ingress.yaml
 | |____deployment.yaml ( k8s deployment )
