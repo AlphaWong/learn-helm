@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "learn-helm.fullname" . }}
+  labels:
+    app.kubernetes.io/name: {{ include "learn-helm.name" . }}
+    helm.sh/chart: {{ include "learn-helm.chart" . }}
+    app.kubernetes.io/instance: {{ .Release.Name }}
+    app.kubernetes.io/managed-by: {{ .Release.Service }}
+spec:
+  type: {{ .Values.service.type }}
+  ports:
+    - port: {{ .Values.service.port }}
+      targetPort: http
+      protocol: TCP
+      name: http
+  selector:
+    app.kubernetes.io/name: {{ include "learn-helm.name" . }}
+    app.kubernetes.io/instance: {{ .Release.Name }}
