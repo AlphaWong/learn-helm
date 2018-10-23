@@ -39,3 +39,7 @@ helm repo update
 - kubectl config use-context context-name
   - it will switch the context
 - kubectl port-forward po-name <host-port>:<pod-port>
+
+# k8s configmap vs secret
+- https://medium.com/google-cloud/kubernetes-configmaps-and-secrets-68d061f7ab5b
+- https://medium.com/google-cloud/kubernetes-configmaps-and-secrets-part-2-3dc37111f0dc
