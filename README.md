@@ -38,3 +38,4 @@ helm repo update
   - it will show all the context
 - kubectl config use-context context-name
   - it will switch the context
+- kubectl port-forward po-name <host-port>:<pod-port>
